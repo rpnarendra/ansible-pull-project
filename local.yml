@@ -6,3 +6,4 @@
   tasks:
   - include: tasks/apache.yml
   - include: tasks/cron_apache.yml
+  - include: tasks/htop.yml
