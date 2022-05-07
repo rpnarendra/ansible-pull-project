@@ -1,8 +1,10 @@
+---
 - name: install apache
   yum:
-    name: httpd
-    state: installed
+     name: httpd
+     state: installed
 
+- name: start apache service      
   service:
     name: httpd
     state: started
