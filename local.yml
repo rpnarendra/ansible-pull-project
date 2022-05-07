@@ -2,8 +2,6 @@
   connection: local
   become: true
 
-  tasks: 
-  - name: install apache
-    yum:
-      name: httpd
-      state: installed
+  tasks:
+  - include: tasks/apache.yml
+  - include: tasks/corn_apche.yml
