@@ -3,11 +3,5 @@
   become: true
 
   tasks:
-    -name: update repos
-     yum:
-       update_cache: yes
-     changed_when: False
-
-  tasks:
   - include: tasks/apache.yml
   - include: tasks/cron_apache.yml
