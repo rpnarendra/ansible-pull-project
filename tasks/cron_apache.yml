@@ -1,5 +1,6 @@
 - name: schedule apache
   cron: 
     name: apache
+    user: narendra
     minute: "*/10"
     job: "/usr/bin/ansible-pull -o -U https://github.com/rpnarendra/ansible-pull-project.git"
